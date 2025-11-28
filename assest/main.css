@@ -78,6 +78,9 @@ form{
 .list a:hover{
     color:darkorange;
     font-size: 20px;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s ;
+    transition-
 }
 
 @media screen and (min-width:0) and (max-width:990px) {
