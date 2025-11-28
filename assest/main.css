@@ -73,6 +73,11 @@ form{
 .menu{
     display: none;
 }
+
+.list a:hover{
+    color:darkorange;
+    font-size: 20px;
+}
 @media screen and (min-width:0) and (max-width:990px) {
     .header .container{
         flex-wrap: wrap;
