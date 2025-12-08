@@ -28,11 +28,33 @@ body{
     width: 80%;
     margin: auto;
 }
+form{
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer{
+    border: solid black 1px;
+    margin-top: 200px;
+    background-color: #EEEFFB;
+}
+.footer .container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* End public */
+/* Start header */
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+ .header .form button{
+    border: none;
+    width: 51px;
+    height: 40px;
+    background-color: #FB2E86;
 }
 
 .list ul{
@@ -50,13 +72,6 @@ body{
     color: #FB2E86;
 }
 
-.form button{
-    border: none;
-    width: 51px;
-    height: 40px;
-    background-color: #FB2E86;
-}
-
 .form img{
     width: 24px;
     height: 24px;
@@ -64,10 +79,6 @@ body{
 
 .form input{
     width: 250px;
-}
-
-form{
-    display: flex;
 }
 
 .menu{
@@ -80,10 +91,73 @@ form{
     font-size: 20px;
     transition-duration: 0.5s;
     transition-delay: 0.2s ;
-    transition-
+}
+/* End header */
+
+/* start footer */
+
+.left_side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 105px;
+    padding: 20px 0 0 20px;
 }
 
-@media screen and (min-width:0) and (max-width:990px) {
+.footer_form{
+    display: flex;
+    width: 377px;
+    height: 43.32px;
+}
+
+.right_side{
+width: 60%;
+ margin-top: 105px;
+ gap: 3%;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 15px;
+}
+
+.footer_form input{
+    width: 242px;
+}
+.footer_form button{
+    border: none;
+    width: 155px;
+    background-color: #FB2E86;
+}
+
+.footer_item{
+    width: 30%;
+}
+.footer_item h2{
+    margin-bottom: 20px;
+}
+
+.footer_item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 23.32px;
+    width: 187px;
+}
+.address span ,.address p{
+    color: #8A8FB9;
+    font-family: Lato;
+}
+
+.footer_item li{
+    color: #8A8FB9;
+    font-family: Lato;
+}
+.item_info{
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+@media screen and (min-width: 0) and (max-width:1000px) {
     .header .container{
         flex-wrap: wrap;
     }
@@ -98,6 +172,19 @@ form{
 
     .menu{
         display: block;
+    }
+    .footer .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer .container .right_side {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer_form{
+        flex-direction: column;
     }
     
 }
