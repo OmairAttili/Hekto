@@ -13,7 +13,7 @@ ul{
 }
 
 body{
-    height: 6000px;
+    height: 4000px;
 }
 
 .header{
@@ -35,12 +35,19 @@ form{
 
 .footer{
     border: solid black 1px;
-    margin-top: 200px;
+    margin-top: 120px;
     background-color: #EEEFFB;
 }
 .footer .container{
     display: flex;
     flex-wrap: wrap;
+}
+.hero_section{
+    margin-top: 180px;
+    background-image: url(./image/Rectangle\ 102\ \(1\).png);
+    background-position: center;
+    height: 462px;
+    display: flex;
 }
 /* End public */
 /* Start header */
@@ -157,6 +164,39 @@ width: 60%;
     font-size: 22px;
     color: #000000;
 }
+/* Start hero section */
+
+.hero_section .item{
+    width: 574px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.hero_section p{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 35px;
+    color: #151875;
+    padding-bottom: 28px;
+}
+
+.hero_section button{
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 17px;
+    background-color: #FB2E86;
+    width: 173px;
+    height: 49px;
+    border: none;
+}
+
+/* End hero section  */
 @media screen and (min-width: 0) and (max-width:1150px) {
     .header .container{
         flex-wrap: wrap;
@@ -187,4 +227,8 @@ width: 60%;
         flex-direction: column;
     }
     
+    .hero_section .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
