@@ -49,6 +49,10 @@ form{
     height: 462px;
     display: flex;
 }
+
+.products{
+    margin-top: 30px;
+}
 /* End public */
 /* Start header */
 .header .container{
@@ -116,6 +120,7 @@ form{
     display: flex;
     width: 377px;
     height: 43.32px;
+    justify-content: center;
 }
 
 .right_side{
@@ -123,7 +128,7 @@ width: 60%;
  margin-top: 105px;
  gap: 3%;
  display: flex;
- flex-wrap: wrap;
+ justify-content: center;
  padding: 15px;
 }
 
@@ -164,6 +169,14 @@ width: 60%;
     font-size: 22px;
     color: #000000;
 }
+
+.footer_item h3{
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 45px;
+}
+/* End footer section */
 /* Start hero section */
 
 .hero_section .item{
@@ -197,6 +210,81 @@ width: 60%;
 }
 
 /* End hero section  */
+
+/* Start products section */
+
+.products .items{
+    width: 270px;
+    height: 361px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.products h2{
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 45px;
+    color: #1A0B5B;
+}
+
+.products .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.products .image{
+    width: 270px;
+    height: 236px;
+    background-color: #F6F7FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 17px,0;
+}
+
+.products h3{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FB2E86;
+}
+
+.products .butt{
+    width: 14px;
+    height: 5px;
+}
+
+.products .green{
+    background-color: #05E6B7;
+}
+
+.products .pink{
+    background-color: #F701A8;
+}
+
+.products .blue{
+    background-color: #00009D;
+}
+
+.products .code{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151875;
+}
+
+/* End products section */
 @media screen and (min-width: 0) and (max-width:1150px) {
     .header .container{
         flex-wrap: wrap;
@@ -226,9 +314,13 @@ width: 60%;
     .footer_form{
         flex-direction: column;
     }
-    
+
     .hero_section .container{
         display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .products .row{
         flex-wrap: wrap;
     }
 }
