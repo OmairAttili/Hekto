@@ -13,8 +13,7 @@ nav{
 }
 
 .header{
-    padding-top: 47px;
-    padding-bottom: 35px;
+    padding: 50px 0;
     position: sticky;
     top: 0;
     width: 100%;
@@ -32,7 +31,7 @@ form{
 
 .footer{
     border: solid black 1px;
-    margin-top: 50px;
+    padding: 50px 0;
     background-color: #EEEFFB;
 }
 .footer .container{
@@ -48,13 +47,16 @@ form{
 }
 
 .products{
-    margin-top: 130px;
+    padding: 50px 0;
 }
 
 
 .hero{
     padding: 50px 0px;
     background-color: #F2F0FF;
+}
+.shopex_offer{
+    padding: 50px 0;
 }
 /* End public */
 /* Start header */
@@ -265,6 +267,63 @@ form{
 
 /* End hero section 2 */
 
+/* start shopex offer section  */
+.shopex_offer h2{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 50px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    color: #151875;
+}
+.shopex_offer .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    width: calc((100%-84px)/4);
+}
+
+.shopex_offer img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 27px;
+}
+
+.shopex_offer span{
+    color: #151875;
+    margin-bottom: 30px;
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.shopex_offer p{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1A0B5B4D;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.item{
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.item:hover{
+    border: 2px solid #9c67f1;
+}
+
+/* end shopex offer section  */
+
 /* start footer */
 
 .left_side{
@@ -408,5 +467,9 @@ width: 60%;
 
     .footer_item {
         width: 100%;
+    }
+
+    .shopex_offer .items{
+        flex-direction: column;
     }
 }
