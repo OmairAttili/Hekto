@@ -58,6 +58,9 @@ form{
 .shopex_offer{
     padding: 50px 0;
 }
+.trending_products{
+    padding: 50px 0;
+}
 /* End public */
 /* Start header */
 .header .container{
@@ -269,8 +272,7 @@ form{
 
 /* start shopex offer section  */
 .shopex_offer h2{
-    justify-content: center;
-    display: flex;
+    text-align: center;
     padding-bottom: 50px;
     font-family: Josefin Sans;
     font-weight: 700;
@@ -308,7 +310,7 @@ form{
     text-align: center;
 }
 
-.item{
+.shopex_offer .item{
     width: 270px;
     height: 320px;
     display: flex;
@@ -318,11 +320,77 @@ form{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.item:hover{
+ .shopex_offer .item:hover{
     border: 2px solid #9c67f1;
 }
 
 /* end shopex offer section  */
+
+/* Start Trending products section  */
+
+.trending_products .items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.trending_products h2{
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    color: #151875;
+    padding-bottom: 39px;
+}
+
+.trending_products .item{
+    width: 270px;
+    height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.trending_products img{
+    width: 247px;
+    height: 244px;
+}
+
+.trending_products .chair_name span{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    color: #151875;
+}
+
+.trending_products .salary{
+    display: flex;
+    gap: 12px;
+}
+.trending_products .salary .sal_after{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151875;
+}
+.trending_products .salary .sal_befor{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1518754D;
+    text-decoration: line-through;
+}
+
+.trending_products .item:hover{
+    border: 2px solid #9c67f1;
+}
+
+/* End Trending products section  */
 
 /* start footer */
 
@@ -458,6 +526,11 @@ width: 60%;
     .hero_right img{
     width: 100%;
 }
+
+.trending_products .items{
+    flex-wrap: wrap;
+}
+
 }
 
 @media screen and (max-width: 768px) {
