@@ -372,10 +372,6 @@ transition-duration:1s ;
 transition-delay: 0.1s;
 }
 
-.top_categories .item:hover{
-        border: 2px solid #9c67f1;
-}
-
 /* End Top categories section*/
 
 /* Start hero section 2*/
