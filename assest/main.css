@@ -61,6 +61,11 @@ form{
 .trending_products{
     padding: 50px 0;
 }
+
+.leatest_blog{
+    padding: 50px 0;
+}
+
 /* End public */
 /* Start header */
 .header .container{
@@ -392,6 +397,104 @@ form{
 
 /* End Trending products section  */
 
+/* Start leatest blog section  */
+
+.leatest_blog .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.leatest_blog h2{
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    color: #151875;
+}
+
+.leatest_blog .item{
+    width: 370px;
+    height: 493px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.leatest_blog .name_date{
+    display: flex;
+    width: 100%;
+    padding-left: 14px;
+    padding-top: 19px;
+    gap: 30px;
+}
+.leatest_blog .name_date span{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151875;
+}
+
+.leatest_blog .top_trends{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 18px;
+    color: #151875;
+    padding-top: 31px;
+    padding-bottom: 17px;
+}
+
+.leatest_blog .info{
+    padding-left: 19px;
+}
+
+.leatest_blog .desc{
+    padding-bottom: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    color: #72718F;
+}
+
+.leatest_blog .readMore{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration:solid;
+    text-decoration-line: underline;
+    color: #151875;
+}
+
+.leatest_blog .readMore_middle{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration:solid;
+    text-decoration-line: underline;
+    color: #FB2E86;
+}
+
+.leatest_blog .top_trends_middle{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 18px;
+    color:#FB2E86;
+    padding-top: 31px;
+    padding-bottom: 17px;
+}
+
+.leatest_blog .item_img{
+    width: 370px;
+    height: 255px;
+}
+
+.leatest_blog .item:hover{
+    border: 2px solid #9c67f1;
+}
+
+/* End leatest blog section  */
+
 /* start footer */
 
 .left_side{
@@ -465,12 +568,11 @@ width: 60%;
 }
 /* End footer section */
 @media screen and (max-width:1150px) {
-
-    .header .container{
+       .header .container{
         flex-wrap: wrap;
     }
 
-    .list nav{
+        .list nav{
         display: none;
     }
     
@@ -531,9 +633,11 @@ width: 60%;
     flex-wrap: wrap;
 }
 
+
 }
 
 @media screen and (max-width: 768px) {
+    
     .right_side {
         flex-direction: column;
     }
@@ -545,4 +649,21 @@ width: 60%;
     .shopex_offer .items{
         flex-direction: column;
     }
+}
+@media screen and (max-width: 1211px) {
+    .right_side {
+        flex-direction: column;
+    }
+
+    .footer_item {
+        width: 100%;
+    }
+
+    .shopex_offer .items{
+        flex-direction: column;
+    }
+
+    .leatest_blog .items{
+    flex-wrap: wrap;
+}
 }
