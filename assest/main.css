@@ -15,6 +15,7 @@ nav{
 .header{
     padding: 50px 0;
     position: sticky;
+    z-index: 1;
     top: 0;
     width: 100%;
     background-color: #F6F7FB;
@@ -65,7 +66,6 @@ form{
 .leatest_blog{
     padding: 50px 0;
 }
-
 /* End public */
 /* Start header */
 .header .container{
@@ -170,9 +170,10 @@ form{
 /* Start products section */
 
 .products .items{
-    width: 270px;
+    width: 275px;
     height: 361px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .products h2{
@@ -206,7 +207,7 @@ form{
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    padding: 17px 0;
+    padding-bottom: 17px;
 }
 
 .products h3{
@@ -238,6 +239,45 @@ form{
     font-weight: 400;
     font-size: 14px;
     color: #151875;
+}
+
+.products .salary{
+    color: #151875;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.products .icons{
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+.products .icon button{
+    background-color: #0000000D;
+    border-radius: 50px;
+    border: none;
+    color: #1DB4E7;
+    opacity: 0;
+}
+
+.products .items:hover{
+    border: 2px solid #9c67f1;
+}
+.products .items:hover button{
+    opacity: 1;
+}
+.products .items:hover .info{
+    background-color: #2F1AC4;
+    transition-duration: 2s;
+}
+.products .items:hover .info .code{
+    color: #FFFFFF;
+}
+.products .items:hover .info .salary{
+    color: #FFFFFF;
 }
 
 /* End products section */
