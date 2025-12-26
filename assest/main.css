@@ -66,6 +66,9 @@ form{
 .leatest_blog{
     padding: 50px 0;
 }
+.top_categories{
+    padding: 50px 0;
+}
 /* End public */
 /* Start header */
 .header .container{
@@ -281,6 +284,100 @@ form{
 }
 
 /* End products section */
+
+/* Start Top categories section*/
+
+.top_categories h2{
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    color: #151875;
+    padding-bottom: 50px;
+}
+
+.top_categories .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+    width: 100%;
+}
+
+.top_categories .item{
+    width: 269px;
+    height: 345px;
+}
+
+.top_categories img{
+    width: 269px;
+    height: 269px;
+}
+
+.top_categories .head{
+border-radius: 50%;
+background-color: #F6F7FB;
+position: relative;
+width: 269px;
+height: 269px;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.top_categories .img{
+position: absolute;
+}
+
+.top_categories img{
+    width: 178px;
+    height: 178px;
+}
+
+.top_categories button{
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 21px;
+    background-color: #08D15F;
+    width: 94px;
+    height: 29px;
+    border: none;
+    font-family: Josefin Sans;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.top_categories p{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 20px;
+    color: #151875;
+    text-align: center;
+    padding-top: 27px;
+}
+.top_categories .span{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #151875;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.top_categories .item:hover .head{
+box-shadow: -6px 4px 0 0 #9574e5, 0 0 40px rgba(255, 255, 255, 0.5);
+transition-duration:1s ;
+transition-delay: 0.1s;
+}
+
+.top_categories .item:hover button{
+opacity: 1;
+transition-duration:1s ;
+transition-delay: 0.1s;
+}
+
+/* End Top categories section*/
 
 /* Start hero section 2*/
 
@@ -673,6 +770,9 @@ width: 60%;
     flex-wrap: wrap;
 }
 
+.top_categories .items{
+    flex-wrap: wrap;
+}
 
 }
 
