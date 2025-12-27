@@ -69,6 +69,9 @@ form{
 .top_categories{
     padding: 50px 0;
 }
+.leatest_products{
+    padding: 50px 0;
+}
 /* End public */
 /* Start header */
 .header .container{
@@ -285,6 +288,148 @@ form{
 
 /* End products section */
 
+/* Start Leatest Products section*/
+
+.leatest_products h2{
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 42px;
+    padding-bottom: 19px;
+    color: #1A0B5B;
+}
+
+.leatest_products .head{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    height: 22px;
+    padding-bottom: 50px;
+}
+
+.leatest_products .head span{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: #151875;
+}
+
+.leatest_products .head .first_span{
+    color: #FB4997;
+    text-decoration-line: underline;
+}
+
+.leatest_products .items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.leatest_products .item{
+   width: 360px;
+}
+
+.leatest_products .img_icons{
+    width: 100%;
+    height: 261px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.leatest_products .img_icons i{
+   width: 13.853198051452637px;
+   height: 13.853198051452637px;
+   color: #2F1AC4;
+}
+
+.leatest_products .img_icons button{
+   width:19px;
+   height: 19px;
+   border: none;
+}
+
+.leatest_products .img_icons .icon{
+   width:30px;
+   height: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    border-radius: 50%;
+    background-color: #EEEFFB;
+
+}
+
+.leatest_products .img_icons .icons{
+position: absolute;
+   left: 15px;
+   bottom: 38px;
+   opacity: 0;
+}
+
+
+.leatest_products .info{
+    padding-top: 15.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leatest_products .left_info span{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #151875;
+}
+
+.leatest_products .right_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.leatest_products .right_info .sal_after{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151875;
+}
+
+.leatest_products .right_info .sal_befor{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FB2448;
+    text-decoration-line: line-through;
+}
+
+.leatest_products .woe img{
+    width: 84.87206268310547px;
+    height: 56.725345611572266px;
+    position: absolute;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    top: 7px;
+    left: 14px;
+}
+
+.leatest_products .item:hover .icons{
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-delay: 0.4s;
+}
+
+.leatest_products .item:hover{
+       border: 2px solid #9c67f1;
+}
+
+/* End Leatest Products section*/
 /* Start Top categories section*/
 
 .top_categories h2{
@@ -536,7 +681,6 @@ transition-delay: 0.1s;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 100%;
     padding-top: 50px;
 }
 
@@ -549,7 +693,6 @@ transition-delay: 0.1s;
 }
 
 .leatest_blog .item{
-    width: 370px;
     height: 493px;
      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -616,13 +759,13 @@ transition-delay: 0.1s;
     padding-bottom: 17px;
 }
 
-.leatest_blog .item_img{
-    width: 370px;
-    height: 255px;
-}
 
 .leatest_blog .item:hover{
     border: 2px solid #9c67f1;
+}
+
+.leatest_blog .item_img img{
+    width: 100%;
 }
 
 /* End leatest blog section  */
@@ -784,6 +927,13 @@ width: 60%;
     .shopex_offer .items{
         flex-direction: column;
     }
+
+    .leatest_products .head{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+    }
 }
 @media screen and (max-width: 1211px) {
     .right_side {
@@ -800,5 +950,20 @@ width: 60%;
 
     .leatest_blog .items{
     flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 360px) {
+.leatest_products img{
+   width: 100%;
+}
+
+.leatest_products .info{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leatest_products .left_side{
+    margin: auto;
 }
 }
